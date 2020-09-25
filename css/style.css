@@ -1,0 +1,76 @@
+*{
+  background-color: pink;
+}
+
+.container{
+  width: 600px;
+  margin: auto;
+  cursor: url(../img/117.png), auto;
+}
+
+.container:active{
+  cursor: url(../img/117hit.png), auto;
+}
+h1, h2{
+  font-size: 60px;
+  font-family: "chilanka";
+  text-align: center;
+  margin: 10px;
+}
+
+button{
+  display: block;
+  margin: auto;
+}
+
+.pipa{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.pipa::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: url(../img/Mario_pipe.png) bottom center no-repeat;
+  background-size: 70%;
+  position: absolute;
+  bottom: -150px;
+}
+
+.mantan{
+  width: 100%;
+  height: 100%;
+  background: url(../img/woman-1285-879839.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  top: 170px;
+  transition: 0.3s;
+}
+
+.pipa.muncul .mantan{
+  top: -20px;
+}
+
+.titleimg img{
+  display: block;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.mainimg{
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.mainimg img{
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
