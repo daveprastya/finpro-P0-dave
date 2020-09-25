@@ -47,7 +47,7 @@ function start(){
   setTimeout(() => {
     bSound.pause();
     stop = true;
-    alert(`Your Score ${count}`, onclick = count = 0);
+    alert(`Your Score ${count}`);
   }, 25000);
 }
 
